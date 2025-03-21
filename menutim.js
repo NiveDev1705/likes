@@ -1253,13 +1253,6 @@
                     }
                 ))
             }
-            setupKeyboardShortcut() {
-                window.addEventListener("keydown", (t => {
-                        t.altKey && "2" === t.key && (t.preventDefault(),
-                            this.sendLoveit(t, e))
-                    }
-                ))
-            }
             createNotificationStyles() {
                 const t = document.createElement("style");
                 t.textContent = "\n      .greet-notification {\n        position: fixed;\n        top: -100px;\n        left: 50%;\n        transform: translateX(-50%);\n        background: rgba(17, 17, 27, 0.95);\n        color: #fff;\n        padding: 12px 24px;\n        border-radius: 12px;\n        font-family: 'Inter', system-ui, -apple-system, sans-serif;\n        font-size: 14px;\n        z-index: 10000;\n        display: flex;\n        align-items: center;\n        gap: 8px;\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);\n        border: 1px solid rgba(255, 255, 255, 0.1);\n        transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n      }\n      .greet-notification.show {\n        top: 20px;\n      }\n    ",
@@ -1766,7 +1759,7 @@
                 t.className = "mod-menu-header";
                 const e = document.createElement("div");
                 e.className = "mod-menu-title",
-                    e.textContent = "Tim ist cool";
+                    e.textContent = "Fametopia V.1.1.4";
                 const n = document.createElement("div");
                 n.className = "mod-menu-controls";
                 const i = document.createElement("button");
