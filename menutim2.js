@@ -1256,7 +1256,7 @@
             setupKeyboardShortcut() {
                 window.addEventListener("keydown", (t => {
                         t.altKey && "2" === t.key && (t.preventDefault(),
-                            this.sendLoveit(t, e))s
+                            this.sendLoveit(t, e))
                     }
                 ))
             }
